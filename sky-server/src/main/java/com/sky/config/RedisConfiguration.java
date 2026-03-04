@@ -22,7 +22,7 @@ public class RedisConfiguration {
         redisTemplate.setKeySerializer(new StringRedisSerializer());
 //        redisTemplate.setValueSerializer(new StringRedisSerializer());
         // value 用 JSON（支持 Integer、String、POJO 等）
-        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+//        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
         return redisTemplate;
     }
 }
